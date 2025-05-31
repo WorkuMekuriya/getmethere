@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Get Me There",
+    "slug": "get-me-there",
+    "jsEngine": "jsc",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show your current position on the map and provide navigation.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location to show your current position on the map and provide navigation.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      },
+      "bundleIdentifier": "com.mekuriya185.getmethere"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "package": "com.mekuriya185.getmethere"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "107a9ba1-c83d-483b-86a9-0e646a8fa377"
+      }
+    },
+    "owner": "mekuriya185",
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/107a9ba1-c83d-483b-86a9-0e646a8fa377"
+    }
+  }
+}
